@@ -1,0 +1,9 @@
+/* Auto-split component styles. */
+
+.state-block { text-align: center; padding: var(--space-8) var(--space-4); color: var(--color-muted); }
+
+.state-block .state-icon { font-size: 40px; color: var(--color-gray-300); margin-bottom: var(--space-3); }
+
+.state-block h3 { color: var(--color-text); font-size: var(--fs-md); margin-bottom: var(--space-1); }
+
+.state-block p { font-size: var(--fs-sm); margin-bottom: var(--space-4); }

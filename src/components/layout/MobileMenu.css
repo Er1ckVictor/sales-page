@@ -1,0 +1,66 @@
+/* Auto-split component styles. */
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: .18em;
+}
+
+.logo {
+  color: #ffffff;
+}
+
+/* Ícones e botões de ícone */
+.icon-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 50%; border: none;
+  background: transparent; color: var(--color-text);
+  transition: background var(--transition), color var(--transition);
+  font-size: 18px;
+}
+
+.icon-btn:hover { background: var(--color-gray-100); }
+
+/* Modal */
+.overlay {
+  position: fixed; inset: 0; background: rgba(17,17,17,0.5); z-index: 90;
+  display: flex; align-items: center; justify-content: center; padding: var(--space-4);
+  animation: fadeIn 160ms ease;
+}
+
+.logo { font-weight: 800; font-size: 1.25rem; letter-spacing: 0.02em; }
+
+/* Drawer (mobile menu) */
+.overlay-left { justify-content: flex-start; }
+
+.overlay-right { justify-content: flex-end; }
+
+.drawer { width: min(320px, 86vw); height: 100%; background: var(--color-white); display: flex; flex-direction: column; animation: slideInLeft 200ms ease; }
+
+.drawer-head { display: flex; align-items: center; justify-content: space-between; padding: var(--space-4) var(--space-5); border-bottom: 1px solid var(--color-border); }
+
+.drawer-nav { display: flex; flex-direction: column; padding: var(--space-3); gap: 2px; overflow-y: auto; }
+
+.drawer-nav a { display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: var(--radius-sm); font-size: var(--fs-base); }
+
+.drawer-nav a:hover { background: var(--color-gray-100); }
+
+.drawer-nav hr { border: none; border-top: 1px solid var(--color-border); margin: 8px 4px; }
+
+/* ===============================
+   BLACK / WHITE COMPONENT THEME
+   =============================== */
+
+.icon-btn {
+  color: #eee;
+}
+
+.icon-btn:hover {
+  background: #181818;
+  color: #fff;
+}
+
+.overlay {
+  background: rgba(0,0,0,.72);
+  backdrop-filter: blur(5px);
+}

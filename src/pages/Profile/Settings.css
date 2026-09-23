@@ -1,0 +1,22 @@
+/* Auto-split component styles. */
+
+.card { border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-white); }
+
+.flex-col { display: flex; flex-direction: column; }
+
+.gap-3 { gap: 12px; }
+
+.mb-4{margin-bottom:16px}
+
+/* Generic cards */
+.card {
+  background: #0d0d0d;
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+
+@media (max-width: 900px) {
+  .form-grid { grid-template-columns: 1fr; }
+}

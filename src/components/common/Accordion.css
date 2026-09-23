@@ -1,0 +1,32 @@
+/* Auto-split component styles. */
+
+/* Accordion */
+.accordion-item { border-bottom: 1px solid var(--color-border); }
+
+.accordion-trigger {
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  padding: var(--space-4) 0; background: none; border: none; text-align: left;
+  font-size: var(--fs-base); font-weight: 600; color: var(--color-text);
+}
+
+.accordion-icon { transition: transform var(--transition); }
+
+.accordion-icon.is-open { transform: rotate(180deg); }
+
+.accordion-panel { padding: 0 0 var(--space-4); color: var(--color-muted); font-size: var(--fs-sm); line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .filter-panel.is-open { display: flex; }
+}
+
+.accordion-item {
+  border-bottom-color: #252525;
+}
+
+.accordion-trigger {
+  color: #eee;
+}
+
+.accordion-panel {
+  color: #8d8d8d;
+}

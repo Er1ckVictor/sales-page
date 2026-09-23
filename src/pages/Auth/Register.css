@@ -1,0 +1,46 @@
+/* Auto-split component styles. */
+
+.container { max-width: var(--container-max); margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
+
+.card { border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-white); }
+
+.flex-col { display: flex; flex-direction: column; }
+
+.gap-4 { gap: 16px; }
+
+.text-muted { color: var(--color-muted); }
+
+.text-sm { font-size: var(--fs-sm); }
+
+.text-xs { font-size: var(--fs-xs); }
+
+.mt-2{margin-top:8px}
+
+.mt-5{margin-top:24px}
+
+.mb-5{margin-bottom:24px}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 40px);
+}
+
+/* Generic cards */
+.card {
+  background: #0d0d0d;
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Utility text */
+.text-muted { color: var(--color-muted) !important; }
+
+/* Auth */
+.auth-page { display: flex; justify-content: center; padding: var(--space-8) 0; }
+
+.auth-card { width: min(420px, 100%); padding: var(--space-6); }
+
+.password-strength-track { height: 5px; background: var(--color-gray-100); border-radius: 999px; overflow: hidden; margin-top: 4px; }
+
+.password-strength-fill { height: 100%; background: var(--color-black); transition: width 200ms ease; }

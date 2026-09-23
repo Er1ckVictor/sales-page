@@ -1,0 +1,30 @@
+/* Auto-split component styles. */
+
+.grid-products { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-5); }
+
+@media (max-width: 1100px) {
+  .grid-products { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 760px) {
+  .grid-products { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--color-gray-100) 25%, var(--color-gray-200) 37%, var(--color-gray-100) 63%);
+  background-size: 400% 100%; animation: shimmer 1.4s ease infinite; border-radius: var(--radius-sm);
+}
+
+/* Product skeleton wrapper */
+.product-skeleton { display: flex; flex-direction: column; }
+
+/* Skeleton */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #111 20%,
+    #1c1c1c 40%,
+    #111 60%
+  );
+  background-size: 200% 100%;
+}

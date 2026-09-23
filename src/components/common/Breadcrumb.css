@@ -1,0 +1,18 @@
+/* Auto-split component styles. */
+
+/* Breadcrumb */
+.breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: var(--fs-xs); color: var(--color-muted); margin-bottom: var(--space-4); }
+
+.breadcrumb-item { display: inline-flex; align-items: center; gap: 6px; }
+
+.breadcrumb a:hover { color: var(--color-text); text-decoration: underline; }
+
+.breadcrumb [aria-current="page"] { color: var(--color-text); font-weight: 600; }
+
+.breadcrumb {
+  color: #777;
+}
+
+.breadcrumb [aria-current="page"] {
+  color: #eee;
+}

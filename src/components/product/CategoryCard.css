@@ -1,0 +1,46 @@
+/* Auto-split component styles. */
+
+.text-muted { color: var(--color-muted); }
+
+.text-xs { font-size: var(--fs-xs); }
+
+/* Utility text */
+.text-muted { color: var(--color-muted) !important; }
+
+/* Sections */
+.category-card,
+.product-card,
+.benefit-item,
+.promo-banner,
+.faq-layout,
+.review-card {
+  transition: border-color var(--transition), background var(--transition), transform var(--transition);
+}
+
+.category-card {
+  background: #0d0d0d;
+  border-color: #252525;
+}
+
+.category-card:hover {
+  background: #111;
+  border-color: #3d3d3d;
+  transform: translateY(-3px);
+}
+
+/* Category card */
+.category-card { display: block; border-radius: var(--radius-lg); overflow: hidden; position: relative; border: 1px solid var(--color-border); }
+
+.category-card-media { aspect-ratio: 4/3; overflow: hidden; }
+
+.category-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 260ms ease; }
+
+.category-card:hover .category-card-media img { transform: scale(1.05); }
+
+.category-card-body { padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); }
+
+.category-card-body h3 { font-size: var(--fs-md); }
+
+.category-card-body p { font-size: var(--fs-sm); color: var(--color-muted); margin-top: 2px; }
+
+.category-card-cta { display: inline-flex; align-items: center; gap: 6px; font-size: var(--fs-sm); font-weight: 600; }

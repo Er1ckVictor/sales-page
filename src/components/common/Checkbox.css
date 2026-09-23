@@ -1,0 +1,18 @@
+/* Auto-split component styles. */
+
+.checkbox-row { display: flex; align-items: center; gap: 8px; font-size: var(--fs-sm); }
+
+.checkbox-row input { width: 16px; height: 16px; accent-color: var(--color-black); }
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-sm);
+}
+
+.checkbox-row input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-accent);
+}

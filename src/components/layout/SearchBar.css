@@ -1,0 +1,78 @@
+/* Auto-split component styles. */
+
+.searchbar {
+  background: #111;
+  border: 1px solid #262626;
+}
+
+.searchbar:focus-within {
+  border-color: #444;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.035);
+}
+
+.searchbar-input { color: #eee; }
+
+.searchbar {
+  background: #0d0d0d;
+  border-color: #252525;
+}
+
+.searchbar:hover {
+  border-color: #3a3a3a;
+}
+
+.searchbar:focus-within {
+  background: #101010;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.06);
+}
+
+.searchbar-input {
+  background: transparent;
+  color: #ffffff;
+}
+
+.searchbar-input::placeholder {
+  color: #666666;
+}
+
+/* Search bar */
+.searchbar { position: relative; display: flex; align-items: center; background: var(--color-gray-100); border-radius: var(--radius-sm); padding: 0 12px; }
+
+.searchbar-icon { color: var(--color-muted); flex-shrink: 0; }
+
+.searchbar-input { flex: 1; border: none; background: none; padding: 10px 10px; font-size: var(--fs-sm); outline: none; }
+
+.searchbar-clear { background: none; border: none; color: var(--color-muted); display: flex; }
+
+.searchbar-panel {
+  position: absolute; top: calc(100% + 8px); left: 0; right: 0; background: var(--color-white);
+  border: 1px solid var(--color-border); border-radius: var(--radius-md); box-shadow: var(--shadow-md);
+  padding: var(--space-2); z-index: 60; max-height: 340px; overflow-y: auto;
+}
+
+.searchbar-panel-label { font-size: var(--fs-xs); color: var(--color-muted); padding: 6px 8px; display: block; }
+
+.searchbar-panel ul { display: flex; flex-direction: column; }
+
+.searchbar-panel li button {
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; background: none; border: none;
+  padding: 8px; border-radius: var(--radius-sm); font-size: var(--fs-sm);
+}
+
+.searchbar-panel li button:hover { background: var(--color-gray-100); }
+
+.searchbar-panel img { width: 32px; height: 32px; object-fit: cover; border-radius: 4px; }
+
+.searchbar-empty { padding: 12px 8px; font-size: var(--fs-sm); color: var(--color-muted); }
+
+/* Search dropdown */
+.searchbar-panel {
+  background: #0c0c0c;
+  border-color: #292929;
+  box-shadow: var(--shadow-lg);
+}
+
+.searchbar-panel a:hover {
+  background: #171717;
+}

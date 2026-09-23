@@ -1,0 +1,37 @@
+/* Auto-split component styles. */
+
+.flex { display: flex; }
+
+.flex-col { display: flex; flex-direction: column; }
+
+.items-center { align-items: center; }
+
+.justify-between { justify-content: space-between; }
+
+.gap-2 { gap: 8px; }
+
+.text-muted { color: var(--color-muted); }
+
+.text-xs { font-size: var(--fs-xs); }
+
+/* Utility text */
+.text-muted { color: var(--color-muted) !important; }
+
+/* Sections */
+.category-card,
+.product-card,
+.benefit-item,
+.promo-banner,
+.faq-layout,
+.review-card {
+  transition: border-color var(--transition), background var(--transition), transform var(--transition);
+}
+
+/* Reviews */
+.review-card { display: flex; gap: var(--space-3); padding: var(--space-4) 0; border-bottom: 1px solid var(--color-border); }
+
+.review-avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--color-gray-200); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+
+.review-body { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+
+.review-comment { font-size: var(--fs-sm); color: var(--color-gray-700); line-height: 1.55; }

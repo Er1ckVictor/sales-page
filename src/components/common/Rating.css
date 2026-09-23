@@ -1,0 +1,14 @@
+/* Auto-split component styles. */
+
+.rating-stars { color: #fff; }
+
+.rating-value { color: #ddd; }
+
+/* Rating */
+.rating { display: inline-flex; align-items: center; gap: 6px; }
+
+.rating-stars { display: flex; gap: 1px; color: var(--color-black); }
+
+.rating-value { font-size: var(--fs-xs); font-weight: 600; }
+
+.rating-count { font-size: var(--fs-xs); color: var(--color-muted); }

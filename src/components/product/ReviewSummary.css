@@ -1,0 +1,22 @@
+/* Auto-split component styles. */
+
+.text-muted { color: var(--color-muted); }
+
+.text-xs { font-size: var(--fs-xs); }
+
+/* Utility text */
+.text-muted { color: var(--color-muted) !important; }
+
+.review-summary { display: flex; gap: var(--space-7); flex-wrap: wrap; padding-bottom: var(--space-5); border-bottom: 1px solid var(--color-border); margin-bottom: var(--space-2); }
+
+.review-summary-score { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; min-width: 120px; }
+
+.review-summary-number { font-size: 2.4rem; font-weight: 800; line-height: 1; }
+
+.review-summary-bars { flex: 1; min-width: 220px; display: flex; flex-direction: column; gap: 6px; }
+
+.review-bar-row { display: grid; grid-template-columns: 34px 1fr 34px; align-items: center; gap: 8px; font-size: var(--fs-xs); }
+
+.review-bar-track { height: 6px; background: var(--color-gray-100); border-radius: 999px; overflow: hidden; }
+
+.review-bar-fill { height: 100%; background: var(--color-black); }
